@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build/AdaptiveKit.d",
+    "object": "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build/AdaptiveKit.o",
+    "swift-dependencies": "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build/master.swiftdeps"
+  },
+  "/Users/devidzevano/Desktop/AdaptiveKit/Sources/AdaptiveKit/AdaptiveKit.swift": {
+    "object": "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build/AdaptiveKit.swift.o",
+    "swiftmodule": "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build/AdaptiveKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build/AdaptiveKit.swiftdeps"
+  }
+}

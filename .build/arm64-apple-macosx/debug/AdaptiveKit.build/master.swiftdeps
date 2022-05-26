@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)"
 options: "8f91f5c080ee05dfa082fbbdc06113a444cc9a4781f02ab54a8aa8fd08142ceb"
-build_start_time: [1653570480, 378240108]
-build_end_time: [1653570481, 337002992]
+build_start_time: [1653572719, 114527940]
+build_end_time: [1653572719, 145511150]
 inputs:
-  "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/Sources/AdaptiveKit/AdaptiveKit.swift": [1653570141, 354387760]
+  "/Users/devidzevano/Desktop/AdaptiveKit/Sources/AdaptiveKit/AdaptiveKit.swift": !dirty [1653571750, 674412965]

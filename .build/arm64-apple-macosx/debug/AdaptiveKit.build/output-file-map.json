@@ -1,11 +1,11 @@
 {
   "": {
-    "swift-dependencies": "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKit.build/master.swiftdeps"
+    "swift-dependencies": "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKit.build/master.swiftdeps"
   },
-  "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/Sources/AdaptiveKit/AdaptiveKit.swift": {
-    "dependencies": "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKit.build/AdaptiveKit.d",
-    "object": "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKit.build/AdaptiveKit.swift.o",
-    "swiftmodule": "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKit.build/AdaptiveKit~partial.swiftmodule",
-    "swift-dependencies": "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKit.build/AdaptiveKit.swiftdeps"
+  "/Users/devidzevano/Desktop/AdaptiveKit/Sources/AdaptiveKit/AdaptiveKit.swift": {
+    "dependencies": "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKit.build/AdaptiveKit.d",
+    "object": "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKit.build/AdaptiveKit.swift.o",
+    "swiftmodule": "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKit.build/AdaptiveKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKit.build/AdaptiveKit.swiftdeps"
   }
 }
