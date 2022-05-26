@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKitTests.build/master.swiftdeps"
+  },
+  "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/Tests/AdaptiveKitTests/AdaptiveKitTests.swift": {
+    "dependencies": "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKitTests.build/AdaptiveKitTests.d",
+    "object": "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKitTests.build/AdaptiveKitTests.swift.o",
+    "swiftmodule": "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKitTests.build/AdaptiveKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKitTests.build/AdaptiveKitTests.swiftdeps"
+  }
+}

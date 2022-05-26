@@ -1,0 +1,4 @@
+module AdaptiveKit {
+    header "/Users/devidzevano/Desktop/SwiftProject/AdaptiveKit/.build/arm64-apple-macosx/debug/AdaptiveKit.build/AdaptiveKit-Swift.h"
+    requires objc
+}
