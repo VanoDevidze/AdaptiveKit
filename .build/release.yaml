@@ -1,0 +1,78 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "AdaptiveKit-release.module": ["<AdaptiveKit-release.module>"]
+  "AdaptiveKitPackageTests-release.test": ["<AdaptiveKitPackageTests-release.test>"]
+  "AdaptiveKitTests-release.module": ["<AdaptiveKitTests-release.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<AdaptiveKit-release.module>"]
+  "test": ["<AdaptiveKit-release.module>","<AdaptiveKitPackageTests-release.test>","<AdaptiveKitTests-release.module>"]
+default: "main"
+nodes:
+  "/Users/devidzevano/Desktop/AdaptiveKit/Sources/AdaptiveKit/":
+    is-directory-structure: true
+  "/Users/devidzevano/Desktop/AdaptiveKit/Tests/AdaptiveKitTests/":
+    is-directory-structure: true
+commands:
+  "<AdaptiveKit-release.module>":
+    tool: phony
+    inputs: ["/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build/AdaptiveKit.swift.o","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.swiftmodule"]
+    outputs: ["<AdaptiveKit-release.module>"]
+
+  "<AdaptiveKitPackageTests-release.test>":
+    tool: phony
+    inputs: ["/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitPackageTests.xctest/Contents/MacOS/AdaptiveKitPackageTests"]
+    outputs: ["<AdaptiveKitPackageTests-release.test>"]
+
+  "<AdaptiveKitTests-release.module>":
+    tool: phony
+    inputs: ["/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitTests.build/AdaptiveKitTests.swift.o","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitTests.swiftmodule"]
+    outputs: ["<AdaptiveKitTests-release.module>"]
+
+  "C.AdaptiveKit-release.module":
+    tool: swift-compiler
+    inputs: ["/Users/devidzevano/Desktop/AdaptiveKit/Sources/AdaptiveKit/AdaptiveKit.swift"]
+    outputs: ["/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build/AdaptiveKit.swift.o","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "AdaptiveKit"
+    module-output-path: "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.swiftmodule"
+    import-paths: ["/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release"]
+    temps-path: "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build"
+    objects: ["/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build/AdaptiveKit.swift.o"]
+    other-args: ["-target","arm64-apple-macosx10.10","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-O","-g","-j8","-DSWIFT_PACKAGE","-module-cache-path","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build/AdaptiveKit-Swift.h","-color-diagnostics"]
+    sources: ["/Users/devidzevano/Desktop/AdaptiveKit/Sources/AdaptiveKit/AdaptiveKit.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: 8
+
+  "C.AdaptiveKitPackageTests-release.test":
+    tool: shell
+    inputs: ["/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.build/AdaptiveKit.swift.o","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitTests.build/AdaptiveKitTests.swift.o"]
+    outputs: ["/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitPackageTests.xctest/Contents/MacOS/AdaptiveKitPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/release/AdaptiveKitPackageTests.xctest/Contents/MacOS/AdaptiveKitPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-L","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release","-o","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitPackageTests.xctest/Contents/MacOS/AdaptiveKitPackageTests","-module-name","AdaptiveKitPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","arm64-apple-macosx11.0","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.AdaptiveKitTests-release.module":
+    tool: swift-compiler
+    inputs: ["/Users/devidzevano/Desktop/AdaptiveKit/Tests/AdaptiveKitTests/AdaptiveKitTests.swift","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKit.swiftmodule"]
+    outputs: ["/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitTests.build/AdaptiveKitTests.swift.o","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitTests.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "AdaptiveKitTests"
+    module-output-path: "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitTests.swiftmodule"
+    import-paths: ["/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release"]
+    temps-path: "/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitTests.build"
+    objects: ["/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/AdaptiveKitTests.build/AdaptiveKitTests.swift.o"]
+    other-args: ["-target","arm64-apple-macosx11.0","-swift-version","5","-index-store-path","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-O","-g","-j8","-DSWIFT_PACKAGE","-module-cache-path","/Users/devidzevano/Desktop/AdaptiveKit/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics"]
+    sources: ["/Users/devidzevano/Desktop/AdaptiveKit/Tests/AdaptiveKitTests/AdaptiveKitTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: 8
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/devidzevano/Desktop/AdaptiveKit/Sources/AdaptiveKit/","/Users/devidzevano/Desktop/AdaptiveKit/Tests/AdaptiveKitTests/","/Users/devidzevano/Desktop/AdaptiveKit/Package.swift","/Users/devidzevano/Desktop/AdaptiveKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
